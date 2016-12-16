@@ -5,10 +5,11 @@
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
-.idea/
-.node_modules/
-.public/
-.views/
+Lab 2/.idea/
+Lab 2/node_modules/
+Lab 2/public/
+Lab 2/views/
+Lab 3/
 
 # Sensitive or high-churn files:
 .idea/dataSources/
