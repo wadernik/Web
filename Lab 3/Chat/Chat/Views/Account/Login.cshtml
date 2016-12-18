@@ -1,0 +1,49 @@
+﻿@model Chat.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/Content/LoginViewStyle.css" />
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <div class="page-align">
+        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <hr />
+            @Html.ValidationSummary(true) 
+            <div class="b-login__popup" id="popup">
+                <h2>Авторизация</h2>
+                <label class="b-login__field">
+                    <span class="b-login__field__lbl margin1">Логин:</span>
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "inputText" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </label>
+                <label class="b-login__field">
+                    <span class="b-login__field__lbl">Пароль:</span>
+                    @Html.PasswordFor(m => m.Password, new { Textmode = "passwrod", @class = "inputText" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </label>
+                <div class="checkbox-line">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                </div>
+                <div class="b-login__field">
+                    <button class="button" type="submit">Войти</button>
+                </div>
+                <p>
+                    @Html.ActionLink("Register", "Register") if you don't have a local account.
+                </p>
+            </div>
+        }
+    </div>
+</body>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

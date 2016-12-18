@@ -1,0 +1,88 @@
+﻿*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page-align{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+}
+
+.b-login__link {
+    border-bottom: 1px dotted #0000ff;
+    color: #0000ff;
+    text-decoration: none;
+}
+.b-login__popup {
+    font-family: Arial, Verdana;
+    background-color: #eff0f2;
+    padding-bottom: 15px;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    margin-top: 200px;
+}
+
+.b-login__popup h2{
+    padding: 15px;
+    background-color: #2C3E50;
+    color: #FFF;
+}
+
+.b-login__field {
+    text-align: center;
+    display: block;
+    margin: 9px 17px
+}
+
+.checkbox-line{
+    text-align: center;
+    margin: 9px 17px;
+}
+
+.inputText{
+    width: 70% !important;
+}
+
+.b-login__field__lbl {
+    float: left;
+}
+
+.margin1{
+    margin-right: 12px;
+}
+
+.margin2{
+    margin-right: 10px;
+}
+
+.margin3{
+    margin-left: 80px;
+}
+
+.b-login__field input {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: block;
+    width: 150px;
+}
+
+.button{
+    
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding: 10px 19px;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 18px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.button:hover{
+   background-color: #34495E;
+}
