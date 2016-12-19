@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="~/Content/LoginViewStyle.css" />
+    <link rel="stylesheet" href="~/Content/RegistView.css" />
     <title>Авторизация</title>
 </head>
 
@@ -21,18 +21,18 @@
                 <h2>Регистрация</h2>
                 <label class="b-login__field">
                     <span class="b-login__field__lbl margin1">Логин</span>
-                    @Html.TextBoxFor(m => m.UserName, new { @class = "inputText" })
+                    @Html.TextBoxFor(m => m.UserName)
                 </label>
                 <label class="b-login__field">
-                    <span class="b-login__field__lbl">Пароль</span>
-                    @Html.PasswordFor(m => m.Password, new { Textmode = "passwrod", @class = "inputText" })
+                    <span class="b-login__field__lbl margin2">Пароль</span>
+                    @Html.PasswordFor(m => m.Password, new { Textmode = "passwrod" })
                 </label>
                 <label class="b-login__field">
-                    <span class="b-login__field__lbl">Подтвердите пароль</span>
+                    <span class="b-login__field__lbl margin3">Подтвердите пароль</span>
                     @Html.PasswordFor(m => m.ConfirmPassword, new { Textmode = "passwrod", @class = "inputText" })
                 </label>
                 <div class="b-login__field">
-                    <button class="button" type="submit" value="Register">Зарегистрироваться</button>
+                    <button class="button" type="submit" value="Register" style="box-sizing: content-box;">Зарегистрироваться</button>
                 </div>
             </div>
         }

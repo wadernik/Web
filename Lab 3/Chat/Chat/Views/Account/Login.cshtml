@@ -13,12 +13,13 @@
 
 <body>
     <div class="page-align">
-        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-        {
-            @Html.AntiForgeryToken()
-            <hr />
-            @Html.ValidationSummary(true) 
-            <div class="b-login__popup" id="popup">
+        <div class="b-login__popup" id="popup">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <hr />
+                @Html.ValidationSummary(true)
+
                 <h2>Авторизация</h2>
                 <label class="b-login__field">
                     <span class="b-login__field__lbl margin1">Логин</span>
@@ -37,11 +38,16 @@
                 <div class="b-login__field">
                     <button class="button" type="submit">Войти</button>
                 </div>
-                <p>
-                    @Html.ActionLink("Register", "Register") if you don't have a local account.
-                </p>
-            </div>
-        }
+
+            }
+            <form action="@Url.Action("Register", "Account")">
+                <button class="button" style="box-sizing: content-box;">Регистрация</button>
+            </form>
+        </div>
+       
+               
+        
+        
     </div>
 </body>
 @section Scripts {
