@@ -4,7 +4,7 @@
 }
 
 .page-align{
-    width: 300px;
+    width: 500px;
     height: 500px;
     text-align: center;
 }
@@ -20,7 +20,7 @@
     padding-bottom: 15px;
     left: 0;
     top: 100%;
-    width: 300px;
+    width: 350px;
     margin-top: 200px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .inputText{
-    width: 70% !important;
+    margin-left: 10px;
 }
 
 .b-login__field__lbl {
@@ -50,15 +50,15 @@
 }
 
 .margin1{
-    margin-right: 12px;
+    margin-right: 118px;
 }
 
 .margin2{
-    margin-right: 10px;
+    margin-right: 106px;
 }
 
 .margin3{
-    margin-left: 80px;
+    margin-right: 8px;
 }
 
 .b-login__field input {
@@ -70,7 +70,6 @@
 }
 
 .button{
-    
     background-color: #2C3E50;
     color: #ffffff;
     padding: 10px 19px;
@@ -80,7 +79,7 @@
     display: inline-block;
     min-height: 18px;
     text-decoration: none;
-    width: 100px;
+    width: 155px;
 }
 
 .button:hover{
