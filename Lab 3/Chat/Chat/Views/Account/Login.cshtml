@@ -21,12 +21,12 @@
             <div class="b-login__popup" id="popup">
                 <h2>Авторизация</h2>
                 <label class="b-login__field">
-                    <span class="b-login__field__lbl margin1">Логин:</span>
+                    <span class="b-login__field__lbl margin1">Логин</span>
                     @Html.TextBoxFor(m => m.UserName, new { @class = "inputText" })
                     @Html.ValidationMessageFor(m => m.UserName)
                 </label>
                 <label class="b-login__field">
-                    <span class="b-login__field__lbl">Пароль:</span>
+                    <span class="b-login__field__lbl">Пароль</span>
                     @Html.PasswordFor(m => m.Password, new { Textmode = "passwrod", @class = "inputText" })
                     @Html.ValidationMessageFor(m => m.Password)
                 </label>
