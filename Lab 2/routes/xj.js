@@ -101,6 +101,6 @@ function getCommentPage(uri, callback) {
     });
 }
 
-request.post(authOptions, authCallback);
-//request(getPageOptions, callback);
-//setTimeout(getPage, 3000);
+function postCommentCallback(error, response, body) {
+    console.log("Error status: " + error);
+}
