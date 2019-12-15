@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Interstate";
+    font-weight: normal;
+    src: url("../fonts/productsans/ProductSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Interstate";
+    font-weight: 100;
+    src: url("../fonts/productsans/ProductSans-Light.ttf");
+}
+
+/* Header style */
+.header {
+	width: 100%;
+	font: 100 14px/1.5 Interstate, Lucida Grande, Arial, sans-serif;
+	background:
+		#333;
+	height: 46px;
+	transition: height .2s ease-in-out;
+}
+
+.header-container {
+	width: 1240px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.header-left {
+	display: block;
+	width: 40%;
+}
+
+.header-logo {
+	left: 0;
+	background: linear-gradient(#f70,#f30);
+	width: 184px;
+	height: 46px;
+}
+
+.header-img {
+	padding: 10px 0 0 10px;
+}
+
+.navbar {
+	display: block;
+}
+
+.navbar-menu > li {
+	float:left;
+	position:relative;
+}
+
+.navbar-menu > li > a {
+	display:block;
+	padding:12px 0;
+	width:104px;
+	height:46px;
+	border-right:1px solid #111;
+	box-sizing:border-box;
+    text-align:center;
+    color: #ccc;
+}
+
+.list-nostyle {
+	list-style: none;
+	margin: 0;
+}
+
+.left {
+	float: left;
+}

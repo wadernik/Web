@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
 	font-family: "Interstate";
 	font-weight: normal;
 	src: url("../fonts/Interstate.ttf");
@@ -8,6 +8,18 @@
 	font-family: "Interstate";
 	font-weight: 100;
 	src: url("../fonts/Interstate-Light.ttf");
+} */
+
+@font-face {
+    font-family: "Interstate";
+    font-weight: normal;
+    src: url("../fonts/productsans/ProductSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Interstate";
+    font-weight: 100;
+    src: url("../fonts/productsans/ProductSans-Light.ttf");
 }
 
 body {
@@ -75,7 +87,6 @@ div h2 {
 	margin-bottom: 30px;
 	font-weight: 700;
 }
-
 
 /*Type style*/
 
@@ -195,7 +206,7 @@ div h2 {
 .FrontHero-logo {
 	position: absolute;
 	left: 20px;
-	background: url(https://a-v2.sndcdn.com/assets/images/header/cloud-e365a4.png) no-repeat 11px 0px;
+	background: url(../images/cloud.png) no-repeat 11px 0px;
 	display: block;
 	width: 184px;
 	height: 46px;
@@ -209,7 +220,7 @@ div h2 {
 	display: block;
 	height: 100%;
 	width: 100%;
-	background: url(https://a-v2.sndcdn.com/assets/images/header/wordmark-d95b0a.png) no-repeat 60px 0px;
+	background: url(../images/wordmark.png) no-repeat 60px 0px;
 }
 
 .FrontHero-content {
@@ -267,9 +278,19 @@ div h2 {
 .HeroSearch-submit {
 	border: 0;
 	padding: 0;
-	background: url(https://a-v2.sndcdn.com/assets/images/header/search-dbfe5c.svg) 0 0 no-repeat;
+	background: url(../images/Search.svg) 0 0 no-repeat;
 	position: absolute;
 	cursor: pointer;
+}
+
+.FrontHero-menu {
+	margin-right: 10px;
+	line-height: 18px;
+	/* padding: 10px 15px; */
+	padding: 2px 8px 2px 7px;
+	height: 20px;
+	font-size: 16px;
+	transition: opacity .2s linear;
 }
 
 .FrontHero-upload {
@@ -412,7 +433,7 @@ div h2 {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url(https://a-v2.sndcdn.com/assets/images/buttons/hero/play-69601b.svg);
+	background-image: url(../images/Play.svg);
 	background-size: 40% 60%;
 	background-position: 60% center;
 	background-repeat: no-repeat;
@@ -514,7 +535,7 @@ div h2 {
 	width: 375px;
 	height: 300px;
 	margin: 50px 65px 0 45px;
-	background-image: url(https://a-v2.sndcdn.com/assets/images/front/mobile-teaser/iphone_precomposed-b00152.png);
+	background-image: url(../images/iphone_precomposed.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -612,7 +633,7 @@ div h2 {
 	bottom: 0;
 	right: 0;
 	height: 350px;
-	background-image: url(https://a-v2.sndcdn.com/assets/images/front/on-soundcloud-teaser/depressed_producer-0bbfa2.jpg);
+	background-image: url(../images/depressed_producer.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
