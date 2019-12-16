@@ -33,7 +33,7 @@ body {
 
 a,
 a:visited {
-	color: #fff;
+	/* color: #fff; */
 	text-decoration: none;
 }
 p{
